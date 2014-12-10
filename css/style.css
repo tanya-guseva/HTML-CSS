@@ -1,0 +1,39 @@
+body {
+	background: url(../img/fon.jpg) no-repeat;
+}
+.container {
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+}
+.title {
+	color: #fff;
+}
+.img-circle{
+    background: none repeat scroll 0 0 #93ffdd;
+    text-align: center;
+    height: 170px;
+    margin: 0 auto 30px;
+    position: relative;
+    -moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+    width: 170px;
+    border-radius: 50%;
+	display: inline-block;
+}
+.img-circle:hover{
+	background-color: #63a9cd;
+	color: #0400a7;
+
+}
+.text_menu {
+	padding-top: 55px;
+	font-weight: 500;
+	font-size: 20px;
+}
+.menu {
+	margin: 40px 44px;
+	float: left;
+}
