@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- Указывает тип документа -->
+<html>
+<head>
+		<!-- Задаем кодировку страницы -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- Мета тег X-UA-Compatible управляет режимом отображением страниц в браузерах IE8+. IE=edge всегда использует последний доступный стандартный режим отображения независимо от <!DOCTYPE> -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Задав мета-тегу viewport значение “device-width”, мы говорим браузеру, что ширина области просмотра равняется ширине этого устройства, а не стандартной ширине в 980px, как он может предполагать по-умолчанию. Атрибут initial-scale определяет начальный масштаб страницы. Чем больше число, тем выше масштаб.-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Краткое описание содержимого веб-страницы -->
+		<meta name="description" content="Изучение HTML и CSS на практике">
+		<!-- Описание ключевых слов, встречающихся на странице. Полезен для поисковых систем -->
+		<!-- <meta name="keywords" content="HTML, META, метатег, тег, поисковая система"> -->
+		<!-- Подключение файла стилей -->
+		<link rel='stylesheet' type='text/css' href='css/style.css' />
+		<title>Форма регистрации</title>
+</head> 
+<body>
+	<div class="forma">
+	<form id="send" method="POST" name="form1" action="">
+				<p>
+                	<label for="name">Имя</label>
+                	<input id="name" type="text" name="name" value="" />
+                </p>
+                
+                <p>
+                	<label for="company">Логин</label>
+               		<input id="company" type="text" name="company" value="" />
+                </p>
+                
+                <p>
+                	<label for="email">Email</label>
+                	<input id="email" type="email" name="email" value="" />
+                </p>
+
+                 <p>
+                	<label for="Password">Пароль</label>
+                	<input id="password" type="password" name="password" value="" />
+                </p>
+       
+                <p>
+                	<label for="email">Пол</label>
+                	<input id="sex_m" type="radio" name="sex" value="" /><span class="check_box">Мужской</span>
+                	<input id="sex_w" type="radio" name="sex" value="" /><span class="check_box">Женский</span>
+                </p>
+
+                <p>
+                	<label for="phone">Телефон</label>
+                	<input id="phone" type="text" name="phone" value="" />
+                </p>
+                
+                <p>
+                	<label for="country">Страна</label>
+                	<SELECT ="Country">
+					<OPTION VALUE="ukr">Украина
+					<OPTION VALUE ="blg">Болгария
+					<OPTION VALUE ="plsha">Польша
+					<OPTION VALUE ="belg">Бельгия
+					<OPTION VALUE ="ru">Россия
+					<OPTION VALUE ="avst">Австралия
+					<OPTION VALUE ="egip">Египет
+					<OPTION VALUE ="litva">Литва
+					<OPTION VALUE ="dan">Дания
+					<OPTION VALUE ="shves">Швеция
+					</SELECT>
+
+                </p>
+                
+                
+                <p>
+                	<label for="profile">О себе</label>
+                	<textarea name="profile" id="profile" cols="30" rows="10"></textarea>
+                </p>
+                
+                <p><input id="document" type="checkbox" value="Запомнить меня"><span class="check_box">Я принимаю условия соглашения</span></p>
+
+                <p>
+                	<input type="submit" id="submit" value="Зарегистрироваться">
+                </p>   
+    </form>
+	<!-- <form method="POST" name="form1" action="">
+		<p><label>Email</label><input type="email" name="email"></p>
+		<p><label>Password</label><input type="password" name="password"></p>
+		<p><input type="radio" value="Гость" name="People">Гость</p>
+		<p><input type="radio" value="Читатель" name="People">Читатель</p>
+		<p><input type="checkbox" value="Запомнить меня">Запомнить меня</p>
+		<p class="but"><input type="submit" value="Войти"></p>
+	</form> -->
+	</div>
+</body>
+</html>
